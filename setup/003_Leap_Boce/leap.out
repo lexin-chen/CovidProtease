@@ -1,0 +1,608 @@
+-I: Adding /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/prep to search path.
+-I: Adding /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib to search path.
+-I: Adding /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm to search path.
+-I: Adding /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd to search path.
+-f: Source leap.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./leap.in
+----- Source: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.protein.ff14SB
+----- Source of /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.protein.ff14SB done
+Log file: ./leap.log
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+Loading library: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib/amino12.lib
+Loading library: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib/aminoct12.lib
+Loading library: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib/aminont12.lib
+----- Source: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.gaff
+----- Source of /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.81, May 2017)
+----- Source: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.water.tip3p done
+Loading library: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib/atomic_ions.lib
+Loading library: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib/solvents.lib
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+Using ArgH and AspGluO modified Bondi2 radii
+Loading PDB file: ../001_Structure/7l14_final.pdb
+-- residue 448: duplicate [ CA] atoms (total 2)
+-- residue 448: duplicate [ CB] atoms (total 2)
+-- residue 448: duplicate [ CG] atoms (total 2)
+-- residue 448: duplicate [ ND2] atoms (total 2)
+-- residue 448: duplicate [ OD1] atoms (total 2)
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Atom names in each residue should be unique.
+     (Same-name atoms are handled by using the first
+      occurrence and by ignoring the rest.
+      Frequently duplicate atom names stem from alternate
+      conformations in the PDB file.)
+
+  total atoms in file: 4741
+  Leap added 4628 missing atoms according to residue templates:
+       4628 H / lone pairs
+Loading parameters: ../002_Parameters/boce_ligand.am1bcc.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading Mol2 file: ../002_Parameters/boce_ligand_antechamber.mol2
+Reading MOLECULE named LIG
+Writing pdb file: mpro.gas.complex.pdb
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NSER -> SER
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NSER -> SER
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CGLN -> GLN
+Checking Unit.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+The unperturbed charge of the unit (-8.001998) is not zero.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 9389 9391 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 9388 9390 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 9369 9370 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 9368 9370 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 9368 9369 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+Building improper torsion parameters.
+ total 1958 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CGLN	2
+	LIG	1
+	NSER	2
+  )
+ (no restraints)
+Checking Unit.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+The unperturbed charge of the unit (-8.000000) is not zero.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 1948 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CGLN	2
+	NSER	2
+  )
+ (no restraints)
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 4 6 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 4 5 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 5 6 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 24 26 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 25 27 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+Building improper torsion parameters.
+ total 10 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	LIG	1
+  )
+ (no restraints)
+Scaling up box by a factor of 1.236614 to meet diagonal cut criterion
+  Solute vdw bounding box:              87.130 63.916 70.473
+  Total bounding box for atom centers:  136.595 136.595 136.595
+      (box expansion for 'iso' is  37.2%)
+  Solvent unit box:                     18.774 18.774 18.774
+  Volume: 1302488.370 A^3 (oct)
+  Total mass 725617.300 amu,  Density 0.925 g/cc
+  Added 36496 residues.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+addIons: 1st Ion & target unit have charges of the same sign:
+     unit charge = -8.002; ion1 charge = -1;
+     can't neutralize.
+8 Na+ ions required to neutralize.
+Adding 8 counter ions to "solvcomplex" using 1A grid
+Grid extends from solute vdw + 2.85  to  8.85
+Resolution:      1.00 Angstrom.
+Solvent present: replacing closest with ion
+	 when steric overlaps occur
+Calculating grid charges
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (13.24, 10.12, 22.77).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (-20.15, 17.74, 15.73).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (17.75, -30.84, 30.17).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (21.30, -15.70, -13.08).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (-22.44, 9.05, -35.08).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (13.14, -18.95, 38.40).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (-13.54, 22.16, -1.46).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (-6.03, -20.95, -13.71).
+
+Done adding ions.
+Adding 117 counter ions to "solvcomplex". 36371 solvent molecules will remain.
+0: Placed Cl- in solvcomplex at (28.96, 6.97, 31.03).
+0: Placed Cl- in solvcomplex at (43.71, 34.92, 29.47).
+0: Placed Cl- in solvcomplex at (18.62, 19.85, -19.47).
+0: Placed Cl- in solvcomplex at (-27.84, 36.13, 21.49).
+0: Placed Cl- in solvcomplex at (55.07, -7.86, -13.99).
+0: Placed Cl- in solvcomplex at (-33.04, 39.41, 5.96).
+0: Placed Cl- in solvcomplex at (6.30, 20.17, 42.43).
+0: Placed Cl- in solvcomplex at (0.36, -3.41, -63.46).
+0: Placed Cl- in solvcomplex at (-55.46, 7.56, 8.67).
+0: Placed Cl- in solvcomplex at (-49.30, 43.28, -17.67).
+0: Placed Cl- in solvcomplex at (4.50, 56.19, 37.88).
+0: Placed Cl- in solvcomplex at (-47.71, -25.95, -12.41).
+0: Placed Cl- in solvcomplex at (1.16, -42.77, -24.24).
+0: Placed Cl- in solvcomplex at (-4.41, -49.66, -40.19).
+0: Placed Cl- in solvcomplex at (26.34, -46.56, 27.12).
+0: Placed Cl- in solvcomplex at (-2.67, 18.27, 46.29).
+0: Placed Cl- in solvcomplex at (-3.05, 47.19, 14.56).
+0: Placed Cl- in solvcomplex at (-14.24, 33.17, 49.62).
+0: Placed Cl- in solvcomplex at (53.22, -24.12, -36.25).
+0: Placed Cl- in solvcomplex at (16.57, 36.83, 25.68).
+0: Placed Cl- in solvcomplex at (-29.80, 24.28, 19.72).
+0: Placed Cl- in solvcomplex at (42.24, -42.84, -15.30).
+0: Placed Cl- in solvcomplex at (-3.88, -39.66, 36.79).
+0: Placed Cl- in solvcomplex at (7.65, 47.37, 12.20).
+0: Placed Cl- in solvcomplex at (-46.92, 9.55, 44.48).
+0: Placed Cl- in solvcomplex at (17.14, 35.49, -37.23).
+0: Placed Cl- in solvcomplex at (-33.07, 47.13, -29.22).
+0: Placed Cl- in solvcomplex at (8.97, 25.99, -44.31).
+0: Placed Cl- in solvcomplex at (-48.94, -0.27, 1.35).
+0: Placed Cl- in solvcomplex at (27.28, -28.04, 10.36).
+0: Placed Cl- in solvcomplex at (-8.44, 48.44, -43.60).
+0: Placed Cl- in solvcomplex at (42.37, 14.34, -36.92).
+0: Placed Cl- in solvcomplex at (30.13, -7.89, 14.69).
+0: Placed Cl- in solvcomplex at (54.38, 29.04, 20.85).
+0: Placed Cl- in solvcomplex at (10.06, -47.83, -19.08).
+0: Placed Cl- in solvcomplex at (-27.26, 30.39, 27.90).
+0: Placed Cl- in solvcomplex at (7.28, -0.70, -61.90).
+0: Placed Cl- in solvcomplex at (53.08, 41.47, -2.02).
+0: Placed Cl- in solvcomplex at (-46.02, -43.05, 19.74).
+0: Placed Cl- in solvcomplex at (-13.68, -25.49, -41.33).
+0: Placed Cl- in solvcomplex at (-50.74, -28.72, 14.00).
+0: Placed Cl- in solvcomplex at (-6.77, -40.07, -23.68).
+0: Placed Cl- in solvcomplex at (20.29, -9.48, 61.02).
+0: Placed Cl- in solvcomplex at (6.70, 12.91, 32.48).
+0: Placed Cl- in solvcomplex at (54.38, -18.98, -34.02).
+0: Placed Cl- in solvcomplex at (-29.37, 7.76, 21.71).
+0: Placed Cl- in solvcomplex at (-15.38, -33.49, 2.60).
+0: Placed Cl- in solvcomplex at (23.52, -51.92, 2.71).
+0: Placed Cl- in solvcomplex at (-50.85, -31.54, 13.72).
+0: Placed Cl- in solvcomplex at (-14.82, -62.51, -14.17).
+0: Placed Cl- in solvcomplex at (-5.57, 46.56, -29.38).
+0: Placed Cl- in solvcomplex at (-0.87, -41.04, -42.70).
+0: Placed Cl- in solvcomplex at (39.43, -46.17, 3.62).
+0: Placed Cl- in solvcomplex at (17.56, 35.47, 34.30).
+0: Placed Cl- in solvcomplex at (21.12, 31.80, 23.89).
+0: Placed Cl- in solvcomplex at (2.22, -45.76, -6.54).
+0: Placed Cl- in solvcomplex at (-42.49, -7.86, 39.11).
+0: Placed Cl- in solvcomplex at (41.49, -20.00, -44.31).
+0: Placed Cl- in solvcomplex at (-44.97, 29.38, -15.59).
+0: Placed Cl- in solvcomplex at (-18.21, -3.90, 38.94).
+0: Placed Cl- in solvcomplex at (-18.16, -30.31, -27.42).
+0: Placed Cl- in solvcomplex at (19.46, -43.75, -46.07).
+0: Placed Cl- in solvcomplex at (-32.16, 42.58, -10.36).
+0: Placed Cl- in solvcomplex at (57.39, 19.48, 16.18).
+0: Placed Cl- in solvcomplex at (3.03, -39.21, -8.62).
+0: Placed Cl- in solvcomplex at (40.52, 51.15, -14.78).
+0: Placed Cl- in solvcomplex at (-16.88, 8.49, -46.79).
+0: Placed Cl- in solvcomplex at (-0.74, 11.09, 43.07).
+0: Placed Cl- in solvcomplex at (50.48, -16.57, 16.20).
+0: Placed Cl- in solvcomplex at (22.41, 10.45, -31.58).
+0: Placed Cl- in solvcomplex at (-16.15, -52.22, 14.53).
+0: Placed Cl- in solvcomplex at (-33.41, 3.01, -31.28).
+0: Placed Cl- in solvcomplex at (-14.75, 39.64, -16.98).
+0: Placed Cl- in solvcomplex at (8.02, -26.08, -13.11).
+0: Placed Cl- in solvcomplex at (57.62, -14.16, -35.41).
+0: Placed Cl- in solvcomplex at (-13.54, -23.82, -1.46).
+0: Placed Cl- in solvcomplex at (-31.46, -30.70, 16.87).
+0: Placed Cl- in solvcomplex at (28.80, 44.75, 16.20).
+0: Placed Cl- in solvcomplex at (41.25, -12.85, -30.05).
+0: Placed Cl- in solvcomplex at (-32.11, -38.92, -34.66).
+0: Placed Cl- in solvcomplex at (-46.76, 33.17, -30.03).
+0: Placed Cl- in solvcomplex at (34.36, 32.39, 15.99).
+0: Placed Cl- in solvcomplex at (37.09, -42.90, 20.24).
+0: Placed Cl- in solvcomplex at (16.39, -45.05, 46.08).
+0: Placed Cl- in solvcomplex at (-45.75, 22.77, 41.24).
+0: Placed Cl- in solvcomplex at (0.18, 42.34, -34.02).
+0: Placed Cl- in solvcomplex at (-56.91, 2.50, -7.21).
+0: Placed Cl- in solvcomplex at (3.26, 44.21, 36.37).
+0: Placed Cl- in solvcomplex at (41.89, 40.70, 23.78).
+0: Placed Cl- in solvcomplex at (-40.33, 14.44, 31.20).
+0: Placed Cl- in solvcomplex at (-22.33, 35.32, 20.58).
+0: Placed Cl- in solvcomplex at (33.91, -36.24, 14.27).
+0: Placed Cl- in solvcomplex at (-28.62, 50.15, 28.66).
+0: Placed Cl- in solvcomplex at (-43.17, -41.98, -20.75).
+0: Placed Cl- in solvcomplex at (10.82, -23.10, -56.98).
+0: Placed Cl- in solvcomplex at (6.30, -9.23, 62.17).
+0: Placed Cl- in solvcomplex at (4.82, -50.67, 25.09).
+0: Placed Cl- in solvcomplex at (11.79, -52.31, 24.37).
+0: Placed Cl- in solvcomplex at (31.78, -11.91, 56.35).
+0: Placed Cl- in solvcomplex at (-19.13, -12.51, 27.94).
+0: Placed Cl- in solvcomplex at (-55.59, 21.18, 7.92).
+0: Placed Cl- in solvcomplex at (39.79, 52.10, 9.27).
+0: Placed Cl- in solvcomplex at (4.96, 11.47, -61.30).
+0: Placed Cl- in solvcomplex at (15.51, 5.47, 48.04).
+0: Placed Cl- in solvcomplex at (-5.24, 40.94, 23.64).
+0: Placed Cl- in solvcomplex at (-9.78, 22.96, 56.70).
+0: Placed Cl- in solvcomplex at (17.70, 29.46, 38.94).
+0: Placed Cl- in solvcomplex at (17.33, -48.94, -25.68).
+0: Placed Cl- in solvcomplex at (34.26, -42.23, -33.35).
+0: Placed Cl- in solvcomplex at (1.28, 59.63, -2.97).
+0: Placed Cl- in solvcomplex at (32.15, -45.05, -34.93).
+0: Placed Cl- in solvcomplex at (4.81, 63.36, 26.11).
+0: Placed Cl- in solvcomplex at (-40.64, -14.05, 6.44).
+0: Placed Cl- in solvcomplex at (-18.42, 13.55, 62.92).
+0: Placed Cl- in solvcomplex at (-31.96, 11.81, 56.85).
+0: Placed Cl- in solvcomplex at (1.28, 36.64, -16.24).
+0: Placed Cl- in solvcomplex at (-9.45, 40.41, 40.82).
+Adding 117 counter ions to "solvcomplex". 36254 solvent molecules will remain.
+0: Placed Na+ in solvcomplex at (48.90, 0.94, -7.02).
+0: Placed Na+ in solvcomplex at (21.62, -24.55, -55.50).
+0: Placed Na+ in solvcomplex at (-3.72, -47.23, 42.75).
+0: Placed Na+ in solvcomplex at (-28.89, -24.74, -34.29).
+0: Placed Na+ in solvcomplex at (-0.83, 37.89, -14.65).
+0: Placed Na+ in solvcomplex at (-17.44, 41.85, -54.45).
+0: Placed Na+ in solvcomplex at (-10.44, -31.26, -21.39).
+0: Placed Na+ in solvcomplex at (-6.74, 13.88, -54.02).
+0: Placed Na+ in solvcomplex at (-0.53, 39.41, 32.51).
+0: Placed Na+ in solvcomplex at (11.71, -23.19, -40.54).
+0: Placed Na+ in solvcomplex at (-52.35, -21.26, -23.84).
+0: Placed Na+ in solvcomplex at (34.92, -5.21, -3.78).
+0: Placed Na+ in solvcomplex at (-3.83, -22.09, -21.62).
+0: Placed Na+ in solvcomplex at (23.66, 49.72, -28.40).
+0: Placed Na+ in solvcomplex at (22.96, 21.31, -16.24).
+0: Placed Na+ in solvcomplex at (-16.35, -61.75, 4.83).
+0: Placed Na+ in solvcomplex at (-54.96, -36.94, 18.02).
+0: Placed Na+ in solvcomplex at (44.64, 18.71, 31.66).
+0: Placed Na+ in solvcomplex at (35.97, -21.06, 0.73).
+0: Placed Na+ in solvcomplex at (7.70, -1.05, -46.59).
+0: Placed Na+ in solvcomplex at (25.76, -14.70, -4.08).
+0: Placed Na+ in solvcomplex at (30.08, 21.71, 33.65).
+0: Placed Na+ in solvcomplex at (-24.53, 6.65, -47.85).
+0: Placed Na+ in solvcomplex at (-19.13, 49.34, -43.61).
+0: Placed Na+ in solvcomplex at (16.92, 23.58, 17.76).
+0: Placed Na+ in solvcomplex at (-8.16, 15.73, -33.66).
+0: Placed Na+ in solvcomplex at (7.65, 24.38, -27.63).
+0: Placed Na+ in solvcomplex at (44.21, 20.89, -27.69).
+0: Placed Na+ in solvcomplex at (-23.89, -13.09, 33.59).
+0: Placed Na+ in solvcomplex at (-1.89, -50.85, 14.07).
+0: Placed Na+ in solvcomplex at (27.25, -36.83, 23.59).
+0: Placed Na+ in solvcomplex at (11.90, 7.63, -49.50).
+0: Placed Na+ in solvcomplex at (36.59, -47.73, -10.41).
+0: Placed Na+ in solvcomplex at (16.39, 46.93, 19.53).
+0: Placed Na+ in solvcomplex at (-42.51, -9.77, 25.41).
+0: Placed Na+ in solvcomplex at (1.75, -42.23, -33.35).
+0: Placed Na+ in solvcomplex at (-31.96, -11.19, 17.02).
+0: Placed Na+ in solvcomplex at (-53.79, 22.39, -34.66).
+0: Placed Na+ in solvcomplex at (-5.11, 52.15, 25.68).
+0: Placed Na+ in solvcomplex at (37.34, 41.30, -1.46).
+0: Placed Na+ in solvcomplex at (-13.22, 24.29, 26.81).
+0: Placed Na+ in solvcomplex at (6.72, -48.84, -32.08).
+0: Placed Na+ in solvcomplex at (-27.04, -5.61, 20.14).
+0: Placed Na+ in solvcomplex at (-3.42, -50.30, -10.02).
+0: Placed Na+ in solvcomplex at (-0.02, 11.20, -25.62).
+0: Placed Na+ in solvcomplex at (-49.96, -27.13, -14.62).
+0: Placed Na+ in solvcomplex at (-24.74, -64.46, 20.36).
+0: Placed Na+ in solvcomplex at (-0.06, -26.11, -56.35).
+0: Placed Na+ in solvcomplex at (-33.94, 31.89, 17.21).
+0: Placed Na+ in solvcomplex at (21.08, -1.96, 61.22).
+0: Placed Na+ in solvcomplex at (-37.81, 16.27, 46.08).
+0: Placed Na+ in solvcomplex at (52.73, 10.04, 23.78).
+0: Placed Na+ in solvcomplex at (-53.84, -11.07, 2.92).
+0: Placed Na+ in solvcomplex at (-24.87, -21.61, -1.08).
+0: Placed Na+ in solvcomplex at (-6.04, -45.16, -33.52).
+0: Placed Na+ in solvcomplex at (53.78, 39.09, -18.18).
+0: Placed Na+ in solvcomplex at (-42.84, 1.22, -15.58).
+0: Placed Na+ in solvcomplex at (-45.13, 37.77, 13.40).
+0: Placed Na+ in solvcomplex at (-6.60, -11.80, -41.17).
+0: Placed Na+ in solvcomplex at (12.12, 28.98, -29.52).
+0: Placed Na+ in solvcomplex at (-20.40, -4.29, 44.94).
+0: Placed Na+ in solvcomplex at (20.69, -39.31, 29.46).
+0: Placed Na+ in solvcomplex at (-4.94, -37.91, -20.13).
+0: Placed Na+ in solvcomplex at (-27.25, 38.90, -42.66).
+0: Placed Na+ in solvcomplex at (11.71, -0.20, 52.39).
+0: Placed Na+ in solvcomplex at (56.31, 2.06, -19.75).
+0: Placed Na+ in solvcomplex at (-31.24, 36.64, -42.79).
+0: Placed Na+ in solvcomplex at (45.91, 49.34, -17.06).
+0: Placed Na+ in solvcomplex at (26.35, 43.80, -18.33).
+0: Placed Na+ in solvcomplex at (21.53, -5.67, 45.64).
+0: Placed Na+ in solvcomplex at (-11.59, 13.68, 40.90).
+0: Placed Na+ in solvcomplex at (-31.67, 5.56, 51.97).
+0: Placed Na+ in solvcomplex at (23.80, 1.74, 20.47).
+0: Placed Na+ in solvcomplex at (32.61, -39.51, 30.41).
+0: Placed Na+ in solvcomplex at (-7.69, 38.42, 48.27).
+0: Placed Na+ in solvcomplex at (-30.69, -33.59, 33.91).
+0: Placed Na+ in solvcomplex at (-34.50, -22.23, 41.83).
+0: Placed Na+ in solvcomplex at (27.23, -6.73, 32.81).
+0: Placed Na+ in solvcomplex at (33.80, -42.61, 31.66).
+0: Placed Na+ in solvcomplex at (31.77, 6.02, 54.17).
+0: Placed Na+ in solvcomplex at (-24.07, 40.82, 21.15).
+0: Placed Na+ in solvcomplex at (12.90, -16.67, -7.53).
+0: Placed Na+ in solvcomplex at (-3.98, 55.64, -32.45).
+0: Placed Na+ in solvcomplex at (56.54, 9.99, 10.21).
+0: Placed Na+ in solvcomplex at (48.93, -29.16, 36.86).
+0: Placed Na+ in solvcomplex at (56.03, 20.07, 20.64).
+0: Placed Na+ in solvcomplex at (34.32, -27.81, 16.97).
+0: Placed Na+ in solvcomplex at (30.13, 39.62, 0.26).
+0: Placed Na+ in solvcomplex at (18.63, 54.86, 1.28).
+0: Placed Na+ in solvcomplex at (-51.16, 7.36, -36.97).
+0: Placed Na+ in solvcomplex at (54.97, 25.19, 27.03).
+0: Placed Na+ in solvcomplex at (-54.75, 39.46, 10.61).
+0: Placed Na+ in solvcomplex at (34.51, -25.45, 9.49).
+0: Placed Na+ in solvcomplex at (-12.31, -44.65, 16.46).
+0: Placed Na+ in solvcomplex at (35.08, 12.77, -27.16).
+0: Placed Na+ in solvcomplex at (-43.00, -41.73, 29.47).
+0: Placed Na+ in solvcomplex at (39.45, 24.31, -16.98).
+0: Placed Na+ in solvcomplex at (-46.92, 37.62, 31.03).
+0: Placed Na+ in solvcomplex at (-12.46, 29.38, -42.14).
+0: Placed Na+ in solvcomplex at (-2.09, -26.51, 42.37).
+0: Placed Na+ in solvcomplex at (15.41, -27.58, -32.87).
+0: Placed Na+ in solvcomplex at (34.79, -9.14, 0.61).
+0: Placed Na+ in solvcomplex at (25.15, 11.43, -40.71).
+0: Placed Na+ in solvcomplex at (25.30, 28.91, -21.01).
+0: Placed Na+ in solvcomplex at (23.79, -43.93, 6.80).
+0: Placed Na+ in solvcomplex at (-0.38, -23.37, 53.30).
+0: Placed Na+ in solvcomplex at (34.79, -32.14, -12.66).
+0: Placed Na+ in solvcomplex at (-43.88, 24.08, -20.59).
+0: Placed Na+ in solvcomplex at (57.45, 5.88, 23.09).
+0: Placed Na+ in solvcomplex at (11.61, 55.85, 0.48).
+0: Placed Na+ in solvcomplex at (-22.33, 35.32, 47.13).
+0: Placed Na+ in solvcomplex at (-12.73, 48.79, 27.34).
+0: Placed Na+ in solvcomplex at (53.44, 1.38, 4.75).
+0: Placed Na+ in solvcomplex at (-50.30, -3.51, 15.39).
+0: Placed Na+ in solvcomplex at (56.06, -23.39, -7.76).
+0: Placed Na+ in solvcomplex at (-28.28, 49.51, 11.93).
+0: Placed Na+ in solvcomplex at (32.52, 3.79, -35.42).
+Writing pdb file: mpro.wet.complex.pdb
+   printing CRYST1 record to PDB file with box info
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NSER -> SER
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NSER -> SER
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CGLN -> GLN
+Total unperturbed charge:  -0.001998
+Total perturbed charge:    -0.001998
+Checking 'solvcomplex'....
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.299603 angstroms between .R<TYR 488>.A<HH 15> and .R<ILE 412>.A<H 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.331696 angstroms between .R<SER 450>.A<HG 9> and .R<PHE 446>.A<HB3 7>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.076944 angstroms between .R<LEU 447>.A<H 2> and .R<TYR 424>.A<HH 15>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.170817 angstroms between .R<SER 419>.A<HG 9> and .R<PHE 314>.A<H 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.441613 angstroms between .R<THR 404>.A<HG1 12> and .R<ASP 339>.A<H 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.273365 angstroms between .R<PRO 293>.A<HD2 3> and .R<LIG 613>.A<HC28 71>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.366053 angstroms between .R<ILE 200>.A<HG21 8> and .R<LIG 613>.A<HC12 55>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.198108 angstroms between .R<TYR 182>.A<HH 15> and .R<ILE 106>.A<H 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.388595 angstroms between .R<SER 144>.A<HG 9> and .R<PHE 140>.A<HB3 7>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.938253 angstroms between .R<LEU 141>.A<H 2> and .R<TYR 118>.A<HH 15>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.038655 angstroms between .R<SER 113>.A<HG 9> and .R<PHE 8>.A<H 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.440863 angstroms between .R<THR 98>.A<HG1 12> and .R<ASP 33>.A<H 2>
+Checking parameters for unit 'solvcomplex'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 12
+Unit is OK.
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 9389 9391 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 9388 9390 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 9369 9370 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 9368 9370 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+1-4: angle 9368 9369 duplicates bond ('triangular' bond) or angle ('square' bond)
+
+Building improper torsion parameters.
+ total 1958 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CGLN	2
+	LIG	1
+	NSER	2
+	WAT	36254
+  )
+ (no restraints)
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 24; Notes = 17.
+
+                                  /^^^/           /]
+                                 /   ]           / ]
+                         _______/    ]___       /  ]
+                        /                \_____/   /
+                      _/   [@]  \ \                \
+                     /..         | |                ]
+                      VVVvvv\    | |         _/\    ]
+          P A R M E D       |               /    \  ]
+                     AAA^^^^^              /       \]
+                      \_________\   \_____/
+                                \    \
+                                 \____\
+
+ParmEd: a Parameter file Editor
+
+
+Loaded Amber topology file mpro.wet.complex.parm7
+['parm.in']
+Reading actions from parm.in
+
+Repartitioning hydrogen masses to 3.024 daltons. Not changing water hydrogen masses.
+Outputting Amber topology file mpro.wet.complex.hmr.parm7
+Done!
