@@ -1,0 +1,24 @@
+
+Welcome to antechamber 20.0: molecular input file processor.
+
+acdoctor mode is on: check and diagnose problems in the input file.
+-- Check Format for pdb File --
+   Status: pass
+-- Check Unusual Elements --
+   Status: pass
+-- Check Open Valences --
+   Status: pass
+-- Check Geometry --
+      for those bonded   
+      for those not bonded   
+   Status: pass
+-- Check Weird Bonds --
+   Status: pass
+-- Check Number of Units --
+   Status: pass
+acdoctor mode has completed checking the input file.
+
+Info: Total number of electrons: 326; net charge: 0
+
+Running: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/sqm -O -i sqm.in -o sqm.out
+
