@@ -1,0 +1,950 @@
+-I: Adding /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/prep to search path.
+-I: Adding /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib to search path.
+-I: Adding /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm to search path.
+-I: Adding /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd to search path.
+-f: Source leap.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./leap.in
+----- Source: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.protein.ff14SB
+----- Source of /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.protein.ff14SB done
+Log file: ./leap.log
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+Loading library: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib/amino12.lib
+Loading library: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib/aminoct12.lib
+Loading library: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib/aminont12.lib
+----- Source: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.gaff
+----- Source of /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.81, May 2017)
+----- Source: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/cmd/leaprc.water.tip3p done
+Loading library: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib/atomic_ions.lib
+Loading library: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/lib/solvents.lib
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+Loading parameters: /apps/cuda/11.0.207/gcc/9.3.0/amber/20/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+Using ArgH and AspGluO modified Bondi2 radii
+Loading PDB file: ../001_Structure/7l14_final.pdb
+-- residue 448: duplicate [ CA] atoms (total 2)
+-- residue 448: duplicate [ CB] atoms (total 2)
+-- residue 448: duplicate [ CG] atoms (total 2)
+-- residue 448: duplicate [ ND2] atoms (total 2)
+-- residue 448: duplicate [ OD1] atoms (total 2)
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Atom names in each residue should be unique.
+     (Same-name atoms are handled by using the first
+      occurrence and by ignoring the rest.
+      Frequently duplicate atom names stem from alternate
+      conformations in the PDB file.)
+
+  total atoms in file: 4741
+  Leap added 4628 missing atoms according to residue templates:
+       4628 H / lone pairs
+Loading parameters: ../002_Parameters/mani_ligand.am1bcc.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading Mol2 file: ../002_Parameters/mani_ligand_antechamber.mol2
+Reading MOLECULE named LIG
+Writing pdb file: mpro.gas.complex.pdb
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NSER -> SER
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NSER -> SER
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CGLN -> GLN
+Checking Unit.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+The unperturbed charge of the unit (-5.998998) is not zero.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 1974 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CGLN	2
+	LIG	1
+	NSER	2
+  )
+ (no restraints)
+Checking Unit.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+The unperturbed charge of the unit (-8.000000) is not zero.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 1948 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CGLN	2
+	NSER	2
+  )
+ (no restraints)
+Checking Unit.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+The unperturbed charge of the unit (2.001002) is not zero.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 26 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	LIG	1
+  )
+ (no restraints)
+Scaling up box by a factor of 1.234060 to meet diagonal cut criterion
+  Solute vdw bounding box:              87.145 63.959 70.393
+  Total bounding box for atom centers:  136.507 136.507 136.507
+      (box expansion for 'iso' is  37.3%)
+  Solvent unit box:                     18.774 18.774 18.774
+  Volume: 1300000.998 A^3 (oct)
+  Total mass 725007.706 amu,  Density 0.926 g/cc
+  Added 36457 residues.
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+addIons: 1st Ion & target unit have charges of the same sign:
+     unit charge = -5.999; ion1 charge = -1;
+     can't neutralize.
+6 Na+ ions required to neutralize.
+Adding 6 counter ions to "solvcomplex" using 1A grid
+Grid extends from solute vdw + 2.62  to  8.62
+Resolution:      1.00 Angstrom.
+Solvent present: replacing closest with ion
+	 when steric overlaps occur
+Calculating grid charges
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (-18.22, 17.52, 13.86).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (22.64, -13.73, -15.60).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (-21.49, 11.93, -34.17).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (12.83, 13.13, 22.62).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (-12.36, 26.26, -3.92).
+(Replacing solvent molecule)
+Placed Na+ in solvcomplex at (17.75, -30.59, 30.03).
+
+Done adding ions.
+Adding 117 counter ions to "solvcomplex". 36334 solvent molecules will remain.
+0: Placed Cl- in solvcomplex at (41.83, 33.93, -17.20).
+0: Placed Cl- in solvcomplex at (50.06, -17.49, 32.34).
+0: Placed Cl- in solvcomplex at (-19.83, 24.98, 55.67).
+0: Placed Cl- in solvcomplex at (42.49, -25.46, 36.81).
+0: Placed Cl- in solvcomplex at (3.52, 23.59, 38.81).
+0: Placed Cl- in solvcomplex at (-18.53, -45.64, 8.30).
+0: Placed Cl- in solvcomplex at (-40.01, 7.03, -26.25).
+0: Placed Cl- in solvcomplex at (28.11, -26.41, -27.06).
+0: Placed Cl- in solvcomplex at (17.70, 29.34, 25.13).
+0: Placed Cl- in solvcomplex at (-52.91, -4.04, -34.86).
+0: Placed Cl- in solvcomplex at (-5.18, 51.72, -40.68).
+0: Placed Cl- in solvcomplex at (42.98, 38.20, 0.05).
+0: Placed Cl- in solvcomplex at (-16.16, -31.70, -44.98).
+0: Placed Cl- in solvcomplex at (2.67, 1.27, -50.99).
+0: Placed Cl- in solvcomplex at (-38.99, 39.41, 1.59).
+0: Placed Cl- in solvcomplex at (-28.15, -60.23, 14.87).
+0: Placed Cl- in solvcomplex at (38.42, 46.66, -7.00).
+0: Placed Cl- in solvcomplex at (48.63, -14.50, 23.58).
+0: Placed Cl- in solvcomplex at (-33.93, 32.14, 43.61).
+0: Placed Cl- in solvcomplex at (0.85, -17.18, -41.11).
+0: Placed Cl- in solvcomplex at (-29.48, 7.03, 44.34).
+0: Placed Cl- in solvcomplex at (43.40, 13.12, -26.33).
+0: Placed Cl- in solvcomplex at (-44.10, 42.00, -10.17).
+0: Placed Cl- in solvcomplex at (-3.73, -39.04, 27.84).
+0: Placed Cl- in solvcomplex at (34.35, -33.33, 33.77).
+0: Placed Cl- in solvcomplex at (-50.64, 32.51, 13.48).
+0: Placed Cl- in solvcomplex at (21.77, -31.59, 16.99).
+0: Placed Cl- in solvcomplex at (-13.12, 30.76, 5.82).
+0: Placed Cl- in solvcomplex at (3.44, -39.41, -18.55).
+0: Placed Cl- in solvcomplex at (22.30, -51.06, 32.74).
+0: Placed Cl- in solvcomplex at (-11.42, 10.81, 26.87).
+0: Placed Cl- in solvcomplex at (13.55, -6.13, 46.12).
+0: Placed Cl- in solvcomplex at (-8.27, 20.68, 39.08).
+0: Placed Cl- in solvcomplex at (-46.92, 32.79, -22.04).
+0: Placed Cl- in solvcomplex at (17.56, 35.73, -18.94).
+0: Placed Cl- in solvcomplex at (56.75, 18.93, -17.20).
+0: Placed Cl- in solvcomplex at (43.21, 2.25, 32.22).
+0: Placed Cl- in solvcomplex at (-13.53, -23.57, -28.15).
+0: Placed Cl- in solvcomplex at (27.15, 48.29, 6.72).
+0: Placed Cl- in solvcomplex at (-34.41, 18.38, -25.90).
+0: Placed Cl- in solvcomplex at (-39.93, -13.91, 17.55).
+0: Placed Cl- in solvcomplex at (-41.83, 33.32, 15.59).
+0: Placed Cl- in solvcomplex at (6.86, -43.75, -19.32).
+0: Placed Cl- in solvcomplex at (-43.17, -39.69, 7.43).
+0: Placed Cl- in solvcomplex at (14.17, 45.77, -15.48).
+0: Placed Cl- in solvcomplex at (42.98, 15.21, 13.33).
+0: Placed Cl- in solvcomplex at (-43.86, 21.06, -46.57).
+0: Placed Cl- in solvcomplex at (-7.49, 30.03, -39.53).
+0: Placed Cl- in solvcomplex at (31.93, 0.40, -44.42).
+0: Placed Cl- in solvcomplex at (-0.97, -8.54, -36.40).
+0: Placed Cl- in solvcomplex at (30.43, -3.26, 28.95).
+0: Placed Cl- in solvcomplex at (57.63, 37.23, 8.00).
+0: Placed Cl- in solvcomplex at (12.83, -11.34, -28.55).
+0: Placed Cl- in solvcomplex at (24.35, 8.93, -37.72).
+0: Placed Cl- in solvcomplex at (-36.93, -49.41, -13.78).
+0: Placed Cl- in solvcomplex at (-0.02, -57.53, 14.07).
+0: Placed Cl- in solvcomplex at (-20.62, -61.10, 16.73).
+0: Placed Cl- in solvcomplex at (39.53, -29.50, 44.61).
+0: Placed Cl- in solvcomplex at (53.08, -4.27, 24.39).
+0: Placed Cl- in solvcomplex at (12.97, -13.34, -32.78).
+0: Placed Cl- in solvcomplex at (-35.33, -18.42, -9.95).
+0: Placed Cl- in solvcomplex at (37.34, 41.55, 24.95).
+0: Placed Cl- in solvcomplex at (16.75, -23.12, -29.91).
+0: Placed Cl- in solvcomplex at (41.79, -0.46, -15.10).
+0: Placed Cl- in solvcomplex at (38.82, 20.42, 42.28).
+0: Placed Cl- in solvcomplex at (-46.92, -36.19, 17.78).
+0: Placed Cl- in solvcomplex at (48.00, -25.40, -20.85).
+0: Placed Cl- in solvcomplex at (-51.52, -6.40, 41.94).
+0: Placed Cl- in solvcomplex at (-55.34, 19.74, 5.72).
+0: Placed Cl- in solvcomplex at (11.24, -53.94, 19.06).
+0: Placed Cl- in solvcomplex at (12.64, 33.76, 43.37).
+0: Placed Cl- in solvcomplex at (40.97, -36.77, 26.67).
+0: Placed Cl- in solvcomplex at (-42.20, -11.86, -24.38).
+0: Placed Cl- in solvcomplex at (-54.95, 9.30, 44.43).
+0: Placed Cl- in solvcomplex at (-37.01, -10.32, -0.64).
+0: Placed Cl- in solvcomplex at (18.86, -33.49, 26.57).
+0: Placed Cl- in solvcomplex at (-53.68, -36.85, -2.45).
+0: Placed Cl- in solvcomplex at (13.93, 37.00, -38.57).
+0: Placed Cl- in solvcomplex at (-17.04, 20.59, 32.26).
+0: Placed Cl- in solvcomplex at (27.62, -18.75, -20.18).
+0: Placed Cl- in solvcomplex at (-3.93, 53.72, -36.35).
+0: Placed Cl- in solvcomplex at (39.96, 1.62, -1.01).
+0: Placed Cl- in solvcomplex at (44.48, -21.16, 10.47).
+0: Placed Cl- in solvcomplex at (28.84, -22.57, -31.76).
+0: Placed Cl- in solvcomplex at (-17.01, -38.65, -12.85).
+0: Placed Cl- in solvcomplex at (-31.67, -17.18, -41.11).
+0: Placed Cl- in solvcomplex at (-37.84, 29.61, -44.98).
+0: Placed Cl- in solvcomplex at (42.58, -1.59, -19.22).
+0: Placed Cl- in solvcomplex at (-23.15, -28.03, 10.37).
+0: Placed Cl- in solvcomplex at (12.95, -13.02, -19.90).
+0: Placed Cl- in solvcomplex at (-55.21, -3.83, 11.71).
+0: Placed Cl- in solvcomplex at (39.48, 21.91, -16.46).
+0: Placed Cl- in solvcomplex at (14.74, -3.25, -64.41).
+0: Placed Cl- in solvcomplex at (55.32, 40.16, 10.47).
+0: Placed Cl- in solvcomplex at (-16.37, 17.95, -63.75).
+0: Placed Cl- in solvcomplex at (19.02, -42.80, -6.95).
+0: Placed Cl- in solvcomplex at (-7.23, 27.72, -6.38).
+0: Placed Cl- in solvcomplex at (-33.99, 25.62, 23.64).
+0: Placed Cl- in solvcomplex at (-38.54, -43.69, -27.13).
+0: Placed Cl- in solvcomplex at (15.21, -21.90, -24.96).
+0: Placed Cl- in solvcomplex at (-8.77, -24.09, -20.95).
+0: Placed Cl- in solvcomplex at (-47.04, -37.90, -5.21).
+0: Placed Cl- in solvcomplex at (35.19, 24.26, 15.38).
+0: Placed Cl- in solvcomplex at (-14.55, 52.66, -23.77).
+0: Placed Cl- in solvcomplex at (-10.99, -51.41, -34.16).
+0: Placed Cl- in solvcomplex at (27.23, -29.47, 19.39).
+0: Placed Cl- in solvcomplex at (-16.87, -37.25, 6.17).
+0: Placed Cl- in solvcomplex at (-29.10, 41.44, -36.05).
+0: Placed Cl- in solvcomplex at (55.05, -9.51, -27.83).
+0: Placed Cl- in solvcomplex at (-33.10, 49.13, -39.51).
+0: Placed Cl- in solvcomplex at (30.18, -9.22, -50.57).
+0: Placed Cl- in solvcomplex at (31.40, 11.06, 50.94).
+0: Placed Cl- in solvcomplex at (26.50, 26.22, -28.15).
+0: Placed Cl- in solvcomplex at (-14.15, -11.69, -53.25).
+0: Placed Cl- in solvcomplex at (-23.78, -12.60, -30.20).
+0: Placed Cl- in solvcomplex at (9.86, -31.40, -37.06).
+0: Placed Cl- in solvcomplex at (20.94, -32.06, 14.20).
+Adding 117 counter ions to "solvcomplex". 36217 solvent molecules will remain.
+0: Placed Na+ in solvcomplex at (27.76, -29.82, -22.21).
+0: Placed Na+ in solvcomplex at (-6.04, 47.06, -33.66).
+0: Placed Na+ in solvcomplex at (-32.58, 14.02, -15.82).
+0: Placed Na+ in solvcomplex at (36.42, -41.58, -24.58).
+0: Placed Na+ in solvcomplex at (14.92, 39.21, 35.60).
+0: Placed Na+ in solvcomplex at (-0.87, -17.79, -29.57).
+0: Placed Na+ in solvcomplex at (0.40, 45.70, 5.78).
+0: Placed Na+ in solvcomplex at (16.37, 17.02, -25.44).
+0: Placed Na+ in solvcomplex at (-27.85, 2.81, 4.72).
+0: Placed Na+ in solvcomplex at (40.52, 5.42, -14.93).
+0: Placed Na+ in solvcomplex at (-30.53, 42.31, 37.83).
+0: Placed Na+ in solvcomplex at (-57.93, -0.72, -11.98).
+0: Placed Na+ in solvcomplex at (30.18, 36.76, 29.09).
+0: Placed Na+ in solvcomplex at (-7.80, -46.04, -23.84).
+0: Placed Na+ in solvcomplex at (35.98, 25.18, 27.13).
+0: Placed Na+ in solvcomplex at (-52.16, -2.58, 23.25).
+0: Placed Na+ in solvcomplex at (16.58, -44.85, 33.72).
+0: Placed Na+ in solvcomplex at (-17.49, 30.41, 11.91).
+0: Placed Na+ in solvcomplex at (11.69, -1.85, 65.10).
+0: Placed Na+ in solvcomplex at (20.70, 52.91, 2.77).
+0: Placed Na+ in solvcomplex at (-33.41, 26.25, -18.15).
+0: Placed Na+ in solvcomplex at (9.45, -1.56, -58.60).
+0: Placed Na+ in solvcomplex at (-24.53, -62.08, -8.16).
+0: Placed Na+ in solvcomplex at (-10.44, -38.61, -7.49).
+0: Placed Na+ in solvcomplex at (5.72, -16.51, -64.34).
+0: Placed Na+ in solvcomplex at (-46.07, 18.08, -7.35).
+0: Placed Na+ in solvcomplex at (0.56, -56.92, -36.23).
+0: Placed Na+ in solvcomplex at (27.90, -27.39, 21.86).
+0: Placed Na+ in solvcomplex at (-19.82, 53.51, 18.64).
+0: Placed Na+ in solvcomplex at (40.31, 39.78, 1.14).
+0: Placed Na+ in solvcomplex at (-29.06, -20.81, -25.97).
+0: Placed Na+ in solvcomplex at (48.62, 22.97, 14.48).
+0: Placed Na+ in solvcomplex at (-28.44, 44.49, 16.00).
+0: Placed Na+ in solvcomplex at (-43.86, 44.06, -6.74).
+0: Placed Na+ in solvcomplex at (33.80, -32.09, 23.44).
+0: Placed Na+ in solvcomplex at (21.31, -38.44, 0.05).
+0: Placed Na+ in solvcomplex at (6.93, -21.42, -17.13).
+0: Placed Na+ in solvcomplex at (-15.25, 4.24, -53.61).
+0: Placed Na+ in solvcomplex at (-51.01, -18.59, 29.31).
+0: Placed Na+ in solvcomplex at (-21.16, 32.13, 10.83).
+0: Placed Na+ in solvcomplex at (13.80, -24.24, -22.73).
+0: Placed Na+ in solvcomplex at (-21.74, 35.46, 23.16).
+0: Placed Na+ in solvcomplex at (54.29, 37.39, -22.84).
+0: Placed Na+ in solvcomplex at (-55.81, -8.69, -29.01).
+0: Placed Na+ in solvcomplex at (44.23, 0.05, -27.41).
+0: Placed Na+ in solvcomplex at (36.76, -42.21, 38.33).
+0: Placed Na+ in solvcomplex at (22.55, 38.38, -40.68).
+0: Placed Na+ in solvcomplex at (35.20, -14.68, 19.29).
+0: Placed Na+ in solvcomplex at (-5.82, -30.55, 49.55).
+0: Placed Na+ in solvcomplex at (-47.97, -42.72, 21.86).
+0: Placed Na+ in solvcomplex at (8.01, -17.58, 51.45).
+0: Placed Na+ in solvcomplex at (31.19, -47.65, -3.27).
+0: Placed Na+ in solvcomplex at (11.20, 55.12, 13.70).
+0: Placed Na+ in solvcomplex at (47.86, 48.78, 24.46).
+0: Placed Na+ in solvcomplex at (-46.56, -2.11, 5.53).
+0: Placed Na+ in solvcomplex at (4.90, 51.19, -4.54).
+0: Placed Na+ in solvcomplex at (8.55, -7.56, -60.56).
+0: Placed Na+ in solvcomplex at (-57.88, 15.75, 8.07).
+0: Placed Na+ in solvcomplex at (39.94, 34.26, 29.66).
+0: Placed Na+ in solvcomplex at (24.94, 52.12, -3.60).
+0: Placed Na+ in solvcomplex at (-57.03, -40.57, -14.93).
+0: Placed Na+ in solvcomplex at (8.03, -26.08, -49.77).
+0: Placed Na+ in solvcomplex at (-54.97, -24.59, -32.50).
+0: Placed Na+ in solvcomplex at (30.54, 1.01, -51.25).
+0: Placed Na+ in solvcomplex at (-33.04, 16.67, -34.01).
+0: Placed Na+ in solvcomplex at (-45.88, -35.17, -23.14).
+0: Placed Na+ in solvcomplex at (-54.01, 11.93, 18.94).
+0: Placed Na+ in solvcomplex at (-24.50, 20.16, 39.85).
+0: Placed Na+ in solvcomplex at (-11.42, 54.05, 21.96).
+0: Placed Na+ in solvcomplex at (-27.94, -19.66, 33.37).
+0: Placed Na+ in solvcomplex at (-27.94, -42.65, -6.46).
+0: Placed Na+ in solvcomplex at (13.87, 45.35, -22.04).
+0: Placed Na+ in solvcomplex at (22.20, 1.48, 37.38).
+0: Placed Na+ in solvcomplex at (48.88, 14.28, 8.12).
+0: Placed Na+ in solvcomplex at (7.11, 22.28, -25.26).
+0: Placed Na+ in solvcomplex at (28.17, -10.37, -65.65).
+0: Placed Na+ in solvcomplex at (56.31, -20.68, 19.93).
+0: Placed Na+ in solvcomplex at (-44.59, -28.36, -18.24).
+0: Placed Na+ in solvcomplex at (42.02, -42.66, 26.59).
+0: Placed Na+ in solvcomplex at (-48.62, -5.92, 23.44).
+0: Placed Na+ in solvcomplex at (-19.84, 27.98, 60.32).
+0: Placed Na+ in solvcomplex at (-54.78, 38.72, 21.96).
+0: Placed Na+ in solvcomplex at (7.65, 1.64, -41.05).
+0: Placed Na+ in solvcomplex at (4.64, 51.25, 32.26).
+0: Placed Na+ in solvcomplex at (-37.05, -1.32, 48.75).
+0: Placed Na+ in solvcomplex at (-36.93, -26.41, -27.06).
+0: Placed Na+ in solvcomplex at (37.32, -6.59, -20.39).
+0: Placed Na+ in solvcomplex at (-19.13, 10.74, -65.13).
+0: Placed Na+ in solvcomplex at (16.78, -11.09, 46.20).
+0: Placed Na+ in solvcomplex at (-34.90, 25.74, 47.56).
+0: Placed Na+ in solvcomplex at (-33.99, 39.91, 3.04).
+0: Placed Na+ in solvcomplex at (-18.34, -46.20, 37.62).
+0: Placed Na+ in solvcomplex at (9.07, -0.30, -26.57).
+0: Placed Na+ in solvcomplex at (25.23, 1.86, 40.03).
+0: Placed Na+ in solvcomplex at (-39.89, 11.68, 38.80).
+0: Placed Na+ in solvcomplex at (31.74, -16.92, -19.22).
+0: Placed Na+ in solvcomplex at (35.94, -21.57, 30.82).
+0: Placed Na+ in solvcomplex at (-45.74, 10.41, -5.54).
+0: Placed Na+ in solvcomplex at (52.97, -28.36, -18.24).
+0: Placed Na+ in solvcomplex at (16.09, -20.26, -49.65).
+0: Placed Na+ in solvcomplex at (4.07, -47.48, -10.55).
+0: Placed Na+ in solvcomplex at (15.34, 25.78, -41.91).
+0: Placed Na+ in solvcomplex at (35.07, 34.26, 9.35).
+0: Placed Na+ in solvcomplex at (-29.85, 24.26, 41.94).
+0: Placed Na+ in solvcomplex at (13.87, 22.36, -35.32).
+0: Placed Na+ in solvcomplex at (-52.45, 19.34, -33.50).
+0: Placed Na+ in solvcomplex at (17.75, -30.59, 56.58).
+0: Placed Na+ in solvcomplex at (18.28, 16.95, 52.09).
+0: Placed Na+ in solvcomplex at (-42.48, 38.38, 12.42).
+0: Placed Na+ in solvcomplex at (24.94, 6.14, -30.15).
+0: Placed Na+ in solvcomplex at (38.74, 10.94, 8.59).
+0: Placed Na+ in solvcomplex at (-14.05, -42.34, -41.23).
+0: Placed Na+ in solvcomplex at (-13.99, 17.24, -38.32).
+0: Placed Na+ in solvcomplex at (-24.39, -20.24, 32.48).
+0: Placed Na+ in solvcomplex at (29.82, 37.74, -28.15).
+0: Placed Na+ in solvcomplex at (-38.78, 33.99, -6.46).
+0: Placed Na+ in solvcomplex at (14.45, -10.60, -19.65).
+Writing pdb file: mpro.wet.complex.pdb
+   printing CRYST1 record to PDB file with box info
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NSER -> SER
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CGLN -> GLN
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NSER -> SER
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CGLN -> GLN
+Total unperturbed charge:   0.001002
+Total perturbed charge:     0.001002
+Checking 'solvcomplex'....
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.281059 angstroms between .R<TYR 488>.A<N 1> and .R<LIG 613>.A<H73 73>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.263314 angstroms between .R<TYR 488>.A<N 1> and .R<LIG 613>.A<C31 31>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.009214 angstroms between .R<TYR 488>.A<H 2> and .R<LIG 613>.A<H73 73>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.096112 angstroms between .R<TYR 488>.A<H 2> and .R<LIG 613>.A<C31 31>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.182916 angstroms between .R<TYR 488>.A<CD1 9> and .R<LIG 613>.A<H62 62>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.728805 angstroms between .R<TYR 488>.A<CE1 11> and .R<LIG 613>.A<H62 62>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.247045 angstroms between .R<TYR 488>.A<CE1 11> and .R<LIG 613>.A<C18 18>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.005276 angstroms between .R<TYR 488>.A<HE1 12> and .R<LIG 613>.A<H80 80>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.824206 angstroms between .R<TYR 488>.A<CZ 13> and .R<LIG 613>.A<C19 19>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.929598 angstroms between .R<TYR 488>.A<CZ 13> and .R<LIG 613>.A<C18 18>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.136847 angstroms between .R<TYR 488>.A<OH 14> and .R<LIG 613>.A<HN 85>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.498301 angstroms between .R<TYR 488>.A<OH 14> and .R<LIG 613>.A<H78 78>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.367456 angstroms between .R<TYR 488>.A<OH 14> and .R<LIG 613>.A<N17 17>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.299603 angstroms between .R<TYR 488>.A<HH 15> and .R<ILE 412>.A<H 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.195544 angstroms between .R<TYR 488>.A<HH 15> and .R<LIG 613>.A<HN 85>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.385740 angstroms between .R<TYR 488>.A<HH 15> and .R<LIG 613>.A<H79 79>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.956754 angstroms between .R<TYR 488>.A<HH 15> and .R<LIG 613>.A<C36 36>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.133583 angstroms between .R<TYR 488>.A<HH 15> and .R<LIG 613>.A<N17 17>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.205830 angstroms between .R<TYR 488>.A<CE2 16> and .R<LIG 613>.A<H65 65>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.655256 angstroms between .R<TYR 488>.A<CE2 16> and .R<LIG 613>.A<H64 64>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.690212 angstroms between .R<TYR 488>.A<CE2 16> and .R<LIG 613>.A<C19 19>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.929989 angstroms between .R<TYR 488>.A<HE2 17> and .R<LIG 613>.A<H65 65>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.488089 angstroms between .R<TYR 488>.A<HE2 17> and .R<LIG 613>.A<H64 64>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.457219 angstroms between .R<TYR 488>.A<HE2 17> and .R<LIG 613>.A<C19 19>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.885967 angstroms between .R<TYR 488>.A<CD2 18> and .R<LIG 613>.A<H64 64>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.109557 angstroms between .R<PHE 487>.A<HA 4> and .R<LIG 613>.A<H74 74>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.203268 angstroms between .R<PHE 487>.A<HA 4> and .R<LIG 613>.A<C32 32>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.127362 angstroms between .R<PHE 487>.A<C 19> and .R<LIG 613>.A<H73 73>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.665302 angstroms between .R<ASP 482>.A<N 1> and .R<LIG 613>.A<H76 76>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.251434 angstroms between .R<ASP 482>.A<N 1> and .R<LIG 613>.A<C34 34>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.297911 angstroms between .R<ASP 482>.A<H 2> and .R<LIG 613>.A<H76 76>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.132822 angstroms between .R<ASP 482>.A<H 2> and .R<LIG 613>.A<C34 34>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.221312 angstroms between .R<ASP 482>.A<H 2> and .R<LIG 613>.A<C29 29>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.415916 angstroms between .R<ASP 482>.A<CA 3> and .R<LIG 613>.A<H66 66>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.460817 angstroms between .R<ASP 482>.A<CB 5> and .R<LIG 613>.A<H71 71>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.314438 angstroms between .R<ASP 482>.A<CB 5> and .R<LIG 613>.A<H66 66>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.032877 angstroms between .R<ASP 482>.A<HB3 7> and .R<LIG 613>.A<H66 66>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.367344 angstroms between .R<ASP 482>.A<HB3 7> and .R<LIG 613>.A<C22 22>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.594398 angstroms between .R<ASP 482>.A<CG 8> and .R<LIG 613>.A<H71 71>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.549794 angstroms between .R<ASP 482>.A<CG 8> and .R<LIG 613>.A<C28 28>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.964373 angstroms between .R<ASP 482>.A<OD1 9> and .R<LIG 613>.A<H71 71>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.456595 angstroms between .R<ASP 482>.A<OD1 9> and .R<LIG 613>.A<C28 28>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.880066 angstroms between .R<ASP 482>.A<OD2 10> and .R<LIG 613>.A<C28 28>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.116739 angstroms between .R<ASP 482>.A<OD2 10> and .R<LIG 613>.A<C27 27>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.833716 angstroms between .R<THR 481>.A<CA 3> and .R<LIG 613>.A<H75 75>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.871955 angstroms between .R<THR 481>.A<CA 3> and .R<LIG 613>.A<C33 33>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.393423 angstroms between .R<THR 481>.A<HA 4> and .R<LIG 613>.A<H75 75>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.388414 angstroms between .R<THR 481>.A<HA 4> and .R<LIG 613>.A<C34 34>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.358758 angstroms between .R<THR 481>.A<HA 4> and .R<LIG 613>.A<C33 33>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.149125 angstroms between .R<THR 481>.A<HA 4> and .R<LIG 613>.A<C32 32>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.017858 angstroms between .R<THR 481>.A<CB 5> and .R<LIG 613>.A<H75 75>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.026811 angstroms between .R<THR 481>.A<C 13> and .R<LIG 613>.A<H76 76>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.369302 angstroms between .R<THR 481>.A<C 13> and .R<LIG 613>.A<C34 34>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.445938 angstroms between .R<CYS 466>.A<N 1> and .R<LIG 613>.A<O4 4>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.755369 angstroms between .R<CYS 466>.A<H 2> and .R<LIG 613>.A<O4 4>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.360664 angstroms between .R<CYS 466>.A<H 2> and .R<LIG 613>.A<C3 3>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.521335 angstroms between .R<CYS 466>.A<CB 5> and .R<LIG 613>.A<H38 38>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.292957 angstroms between .R<CYS 466>.A<CB 5> and .R<LIG 613>.A<C37 37>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.753574 angstroms between .R<CYS 466>.A<HB2 6> and .R<LIG 613>.A<H38 38>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.132492 angstroms between .R<CYS 466>.A<HB3 7> and .R<LIG 613>.A<H38 38>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.068375 angstroms between .R<CYS 466>.A<HB3 7> and .R<LIG 613>.A<C37 37>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.409091 angstroms between .R<CYS 466>.A<HB3 7> and .R<LIG 613>.A<C5 5>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.304104 angstroms between .R<CYS 466>.A<SG 8> and .R<LIG 613>.A<C39 39>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.426431 angstroms between .R<CYS 466>.A<HG 9> and .R<LIG 613>.A<C47 47>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.348257 angstroms between .R<CYS 466>.A<HG 9> and .R<LIG 613>.A<C40 40>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.047113 angstroms between .R<CYS 466>.A<HG 9> and .R<LIG 613>.A<C39 39>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.497833 angstroms between .R<CYS 466>.A<HG 9> and .R<LIG 613>.A<C37 37>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.442258 angstroms between .R<SER 464>.A<HB2 6> and .R<LIG 613>.A<H52 52>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.192984 angstroms between .R<SER 464>.A<C 10> and .R<LIG 613>.A<H53 53>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.693851 angstroms between .R<SER 464>.A<O 11> and .R<LIG 613>.A<H53 53>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.360240 angstroms between .R<SER 464>.A<O 11> and .R<LIG 613>.A<H52 52>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.185284 angstroms between .R<SER 464>.A<O 11> and .R<LIG 613>.A<H51 51>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.677220 angstroms between .R<SER 464>.A<O 11> and .R<LIG 613>.A<C7 7>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.841619 angstroms between .R<ASN 457>.A<H 2> and .R<LIG 613>.A<H51 51>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.323828 angstroms between .R<ASN 457>.A<ND2 10> and .R<LIG 613>.A<H81 81>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.467746 angstroms between .R<ASN 457>.A<HD21 11> and .R<LIG 613>.A<H82 82>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.444959 angstroms between .R<ASN 457>.A<HD21 11> and .R<LIG 613>.A<H81 81>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.948590 angstroms between .R<ASN 457>.A<HD22 12> and .R<LIG 613>.A<H81 81>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.181323 angstroms between .R<PHE 456>.A<N 1> and .R<LIG 613>.A<H48 48>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.226063 angstroms between .R<PHE 456>.A<HA 4> and .R<LIG 613>.A<O2 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.484186 angstroms between .R<GLY 455>.A<C 6> and .R<LIG 613>.A<H50 50>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.691027 angstroms between .R<GLY 455>.A<C 6> and .R<LIG 613>.A<H48 48>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.231357 angstroms between .R<GLY 455>.A<C 6> and .R<LIG 613>.A<C1 1>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.669140 angstroms between .R<GLY 455>.A<O 7> and .R<LIG 613>.A<H50 50>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.218119 angstroms between .R<GLY 455>.A<O 7> and .R<LIG 613>.A<H49 49>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.280608 angstroms between .R<GLY 455>.A<O 7> and .R<LIG 613>.A<H48 48>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.542311 angstroms between .R<GLY 455>.A<O 7> and .R<LIG 613>.A<C1 1>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.331696 angstroms between .R<SER 450>.A<HG 9> and .R<PHE 446>.A<HB3 7>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.076944 angstroms between .R<LEU 447>.A<H 2> and .R<TYR 424>.A<HH 15>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.170817 angstroms between .R<SER 419>.A<HG 9> and .R<PHE 314>.A<H 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.289072 angstroms between .R<PHE 418>.A<HB3 7> and .R<LIG 613>.A<H82 82>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.405385 angstroms between .R<PHE 418>.A<HB3 7> and .R<LIG 613>.A<C42 42>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.619225 angstroms between .R<PHE 418>.A<HB3 7> and .R<LIG 613>.A<C41 41>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.207111 angstroms between .R<PHE 418>.A<CD1 9> and .R<LIG 613>.A<H83 83>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.462273 angstroms between .R<PHE 418>.A<CD1 9> and .R<LIG 613>.A<O45 45>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.485499 angstroms between .R<PHE 418>.A<CD1 9> and .R<LIG 613>.A<N44 44>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.379599 angstroms between .R<PHE 418>.A<CD1 9> and .R<LIG 613>.A<C43 43>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.331281 angstroms between .R<PHE 418>.A<CD1 9> and .R<LIG 613>.A<C42 42>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.116415 angstroms between .R<PHE 418>.A<HD1 10> and .R<LIG 613>.A<H83 83>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.139980 angstroms between .R<PHE 418>.A<HD1 10> and .R<LIG 613>.A<C42 42>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.228171 angstroms between .R<PHE 418>.A<CE1 11> and .R<LIG 613>.A<O45 45>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.994904 angstroms between .R<PHE 418>.A<CE1 11> and .R<LIG 613>.A<N44 44>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.123034 angstroms between .R<PHE 418>.A<HE1 12> and .R<LIG 613>.A<O45 45>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.355838 angstroms between .R<PHE 418>.A<CZ 13> and .R<LIG 613>.A<O45 45>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.484044 angstroms between .R<THR 417>.A<O 14> and .R<LIG 613>.A<H82 82>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.304495 angstroms between .R<ILE 412>.A<N 1> and .R<LIG 613>.A<H79 79>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.610777 angstroms between .R<ILE 412>.A<N 1> and .R<LIG 613>.A<H58 58>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.155521 angstroms between .R<ILE 412>.A<H 2> and .R<LIG 613>.A<H79 79>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.345911 angstroms between .R<ILE 412>.A<H 2> and .R<LIG 613>.A<H58 58>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.139044 angstroms between .R<ILE 412>.A<CA 3> and .R<LIG 613>.A<H59 59>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.859897 angstroms between .R<ILE 412>.A<CA 3> and .R<LIG 613>.A<H58 58>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.089605 angstroms between .R<ILE 412>.A<CA 3> and .R<LIG 613>.A<C15 15>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.712060 angstroms between .R<ILE 412>.A<CB 5> and .R<LIG 613>.A<H59 59>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.099064 angstroms between .R<ILE 412>.A<CB 5> and .R<LIG 613>.A<C15 15>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.069592 angstroms between .R<ILE 412>.A<HB 6> and .R<LIG 613>.A<H59 59>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.486738 angstroms between .R<ILE 412>.A<CG2 7> and .R<LIG 613>.A<O14 14>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.337659 angstroms between .R<ILE 412>.A<CG2 7> and .R<LIG 613>.A<O13 13>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.915204 angstroms between .R<ILE 412>.A<CG2 7> and .R<LIG 613>.A<C12 12>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.230683 angstroms between .R<ILE 412>.A<HG21 8> and .R<LIG 613>.A<O14 14>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.418435 angstroms between .R<ILE 412>.A<HG21 8> and .R<LIG 613>.A<O13 13>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.243647 angstroms between .R<ILE 412>.A<HG21 8> and .R<LIG 613>.A<C12 12>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.376195 angstroms between .R<ILE 412>.A<HG21 8> and .R<LIG 613>.A<C11 11>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.934923 angstroms between .R<ILE 412>.A<HG23 10> and .R<LIG 613>.A<O13 13>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.089358 angstroms between .R<ILE 412>.A<CG1 11> and .R<LIG 613>.A<H61 61>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.457096 angstroms between .R<ILE 412>.A<CG1 11> and .R<LIG 613>.A<C16 16>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.388842 angstroms between .R<ILE 412>.A<HG12 12> and .R<LIG 613>.A<O14 14>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.558645 angstroms between .R<ILE 412>.A<HG13 13> and .R<LIG 613>.A<H61 61>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.405016 angstroms between .R<ILE 412>.A<HG13 13> and .R<LIG 613>.A<H60 60>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.878118 angstroms between .R<ILE 412>.A<HG13 13> and .R<LIG 613>.A<C16 16>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.831313 angstroms between .R<ARG 411>.A<HG3 10> and .R<LIG 613>.A<H77 77>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.360034 angstroms between .R<ARG 411>.A<HG3 10> and .R<LIG 613>.A<C35 35>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.476550 angstroms between .R<ARG 411>.A<HD2 12> and .R<LIG 613>.A<C25 25>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.107338 angstroms between .R<ARG 411>.A<CZ 16> and .R<LIG 613>.A<H67 67>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.491880 angstroms between .R<ARG 411>.A<NH1 17> and .R<LIG 613>.A<H67 67>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.945285 angstroms between .R<ARG 411>.A<NH1 17> and .R<LIG 613>.A<C24 24>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.060076 angstroms between .R<ARG 411>.A<HH11 18> and .R<LIG 613>.A<H67 67>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.283098 angstroms between .R<ARG 411>.A<HH11 18> and .R<LIG 613>.A<C24 24>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.253760 angstroms between .R<ARG 411>.A<HH11 18> and .R<LIG 613>.A<C23 23>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.412377 angstroms between .R<ARG 411>.A<HH12 19> and .R<LIG 613>.A<H67 67>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.441613 angstroms between .R<THR 404>.A<HG1 12> and .R<ASP 339>.A<H 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.198108 angstroms between .R<TYR 182>.A<HH 15> and .R<ILE 106>.A<H 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.388595 angstroms between .R<SER 144>.A<HG 9> and .R<PHE 140>.A<HB3 7>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 0.938253 angstroms between .R<LEU 141>.A<H 2> and .R<TYR 118>.A<HH 15>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.038655 angstroms between .R<SER 113>.A<HG 9> and .R<PHE 8>.A<H 2>
+
+/apps/cuda/11.0.207/gcc/9.3.0/amber/20/bin/teLeap: Warning!
+Close contact of 1.440863 angstroms between .R<THR 98>.A<HG1 12> and .R<ASP 33>.A<H 2>
+Checking parameters for unit 'solvcomplex'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 145
+Unit is OK.
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 1974 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CGLN	2
+	LIG	1
+	NSER	2
+	WAT	36217
+  )
+ (no restraints)
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 158; Notes = 3.
+
+                                  /^^^/           /]
+                                 /   ]           / ]
+                         _______/    ]___       /  ]
+                        /                \_____/   /
+                      _/   [@]  \ \                \
+                     /..         | |                ]
+                      VVVvvv\    | |         _/\    ]
+          P A R M E D       |               /    \  ]
+                     AAA^^^^^              /       \]
+                      \_________\   \_____/
+                                \    \
+                                 \____\
+
+ParmEd: a Parameter file Editor
+
+
+Loaded Amber topology file mpro.wet.complex.parm7
+['parm.in']
+Reading actions from parm.in
+
+Repartitioning hydrogen masses to 3.024 daltons. Not changing water hydrogen masses.
+Outputting Amber topology file mpro.wet.complex.hmr.parm7
+Done!
