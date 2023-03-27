@@ -1,0 +1,12 @@
+source leaprc.protein.ff19SB
+source leaprc.gaff
+source leaprc.water.opc
+
+aa= sequence { NASN LEU GLN SER SER ILE VAL LYS PHE LYS LYS PRO LEU PRO LEU THR GLN PRO CGLY }
+
+check aa
+solvateOct aa OPCBOX  10.0
+
+addions aa Cl- 0
+saveamberparm aa system_water.top system_water.mdcrd
+savepdb aa system_water.pdb
