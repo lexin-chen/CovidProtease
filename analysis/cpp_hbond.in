@@ -1,0 +1,5 @@
+parm ../../003_Leap_Boce/mpro.complex.parm7
+trajin mpro_stripped.nc
+
+hbond All :1-613 nointramol out mpro_hbond.agr avgout mpro_av_hbond.dat
+go

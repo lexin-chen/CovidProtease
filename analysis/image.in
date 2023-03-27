@@ -1,0 +1,20 @@
+parm ../../003_Leap_Boce/mpro.wet.complex.hmr.parm7
+trajin ../../WetComplex_Boce/md.nc
+reference ../../003_Leap_Boce/mpro.wet.complex.rst7
+
+rmsd rms1 reference :1-613@CA
+
+#autoimage :1-306
+
+#autoimage :613
+
+strip :WAT:Na+:Cl-
+
+trajout mpro_stripped.nc nobox
+
+
+
+
+
+
+

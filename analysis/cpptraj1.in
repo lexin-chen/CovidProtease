@@ -1,0 +1,6 @@
+#RMSD
+parm ../../003_Leap_Boce/mpro.wet.complex.hmr.parm7
+#trajin the trajectory
+trajin ../../WetComplex_Boce/md.nc 1 last 100
+
+minimage imagedist :1-612@CA,C,O,N,H :1-612@CA,C,O,N,H out minimagedist

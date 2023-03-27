@@ -1,0 +1,12 @@
+#!/usr/bin/sh
+parm ../../003_Leap_Boce/mpro.wet.complex.hmr.parm7
+#trajin the trajectory
+trajin ../../WetComplex_Boce/md.nc
+#read in reference
+reference ../../003_Leap_Boce/mpro.wet.complex.rst7
+autoimage :1-306
+autoimage :613
+#compute RMSD (do not fit internal geometris first, included rigid body motions, convert frames to ns (framenum*.005)
+rmsd rms1 ":613&!(@H=)" nofit mass out mpro_lig_rmsd.dat time .2
+#histogram the nofit rmsd
+histogram rms1,*,*,.1,* norm out mpro_lig_rmsd_histogram.dat

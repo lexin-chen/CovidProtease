@@ -1,0 +1,9 @@
+parm ../../003_Leap_Boce/mpro.complex.parm7
+trajin mpro_stripped.nc
+reference ../../003_Leap_Boce/mpro.gas.complex.rst7
+#nativecontacts name NC1 :1-612&!@H= :LIG&!@H= \   
+#byresidue out nc.all.res.dat mindist maxdist \  
+#distance 4.5 reference map mapout resmap.gnu \
+#contactpdb Loop-NDP.pdb \
+#series seriesout native.dat
+nativecontacts :1-612&!@H= :613&!@H= byresidue writecontacts contacts.dat out numcontacts.dat first distance 4.5

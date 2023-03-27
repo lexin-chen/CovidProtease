@@ -1,0 +1,14 @@
+parm ../../003_Leap_Boce/mpro.complex.parm7
+trajin mpro_stripped.nc
+reference ../../003_Leap_Boce/mpro.gas.complex.rst7
+#hbond All :1-613 nointramol out mpro_hbond.agr avgout mpro_av_hbond.dat
+#go
+
+
+
+nativecontacts name NC1 :1-612&!@H= :613&!@H=\   
+byresidue out nc.all.res.dat mindist maxdist \  
+distance 4.0 reference map mapout resmap.gnu \
+contactpdb Loop-NDP.pdb \
+series seriesout native.dat
+go

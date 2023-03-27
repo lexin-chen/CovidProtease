@@ -1,0 +1,9 @@
+parm ../../003_Leap_Boce/mpro.complex.parm7
+trajin mpro_stripped.nc
+
+rms first       #just align the molecule, do not calculate RMSD as we are not saving any output file.
+average crdset MyAvg
+run
+rms ref MyAvg
+atomicfluct :1-612@CA,CB byres out rmsf.dat               #@C,CA,N,O,CB byres bfactor;calculate RMSF for any CA atom
+

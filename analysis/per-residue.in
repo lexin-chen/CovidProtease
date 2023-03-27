@@ -1,0 +1,16 @@
+&general
+startframe=1, endframe=4473, interval=1000,
+verbose=2, keep_files=0,
+/
+&gb
+igb=5, saltcon=0.150,
+/
+&pb
+istrng=0.15, fillratio=4.0,
+/
+&decomp
+  idecomp=1, print_res="306-500",
+  dec_verbose=1,
+/  
+
+
